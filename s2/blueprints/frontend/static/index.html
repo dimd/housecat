@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="s2">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.js"></script>
+     <script src="js/app.js"></script>
+     <script src="js/controllers/mainCtrl.js"></script>
+  </head>
+  <body>
+    <div ng-controller="MainCtrl">
+      <label>Location:</label>
+      <input type='text' ng-model="location" value="{{ location }}" name="location">
+      <br>
+      <label>Min Price:</label>
+      <input type='text' value="{{ minPrice }}" ng-model="minPrice" name="minPrice">
+      <br>
+      <label>Max Price:</label>
+      <input type='text' value="{{ maxPrice }}" ng-model="maxPrice" name="maxPrice">
+      <br>
+      <label>Min Square Meters:</label>
+      <input type='text' value="{{ minSqMeters }}" ng-model="minSqMeters">
+      <br>
+      <label>Max Square Meters:</label>
+      <input type='text' value="{{ maxSqMeters }} "ng-model="maxSqMeters">
+      <br>
+      <label>Availability:</label>
+      <select ng-model="availability"
+	      ng-options="option for option in ['Rent', 'Sale']">
+      </select>
+      <br>
+      <label>Type:</label>
+      <input type='text' ng-model="type" name="type" value="{{ type }}">
+      <br>
+      <button name="button" ng-click="search()" ng-model="button">Search</button>
+      <p ng-repeat="o in results">
+      {{ o }}
+      </p>
+    </div>
+  </body>
+</html>
