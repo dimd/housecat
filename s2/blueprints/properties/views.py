@@ -25,6 +25,5 @@ def list_properties():
             '_id': False,
         }
     }
-    print(kwargs['filter'])
     properties = current_app.db.properties.find(**kwargs)
     return jsonify(list(properties))
