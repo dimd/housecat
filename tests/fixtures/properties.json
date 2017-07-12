@@ -1,0 +1,22 @@
+[
+	{
+		"Availability": "Sale",
+		"ID": 1,
+		"Location": "Athens",
+		"Price": 1000000,
+		"Square Meters": 1000,
+		"Type": [
+			"Apartment"
+		]
+	},
+	{
+		"Availability": "Rent",
+		"ID": 2,
+		"Location": "Patra",
+		"Price": 160,
+		"Square Meters": 100,
+		"Type": [
+			"Maisonette"
+		]
+	}
+]
