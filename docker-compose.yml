@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db:
+    image: mongo
+    volumes:
+      - data-volume:/data/db
+  web:
+    build:
+      context: .
+      args:
+        http_proxy: $http_proxy
+        https_proxy: $https_proxy
+    environment:
+      FLASK_DEBUG: 1
+    volumes:
+      - .:/code
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+
+
+volumes:
+  data-volume:

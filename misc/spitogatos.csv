@@ -1,0 +1,21 @@
+ID;Type;Availability;Location;Square Meters;Price
+1;Apartment;Sale;Athens;100;230000
+2;Apartment, Studio;Sale;Athens;70;190000
+3;Apartment;Sale;Thessalloniki;140;250000
+4;Apartment;Rent;Patra;55;250
+5;Apartment, Loft;Rent;Patra;80;360
+6;Studio;Sale;Athens;30;90000
+7;Studio;Sale;Athens;40;120000
+8;Studio, Loft;Rent;Thessalloniki;65;300
+9;Studio;Rent;Thessalloniki;65;300
+10;Studio;Rent;Thessalloniki;90;500
+11;Loft, Apartment,  Studio;Sale;Athens;70;350000
+12;Loft;Sale;Chania;45;20000
+13;Loft;Sale;Patra;55;35000
+14;Loft;Rent;Chania;65;400
+15;Loft;Rent;Patra;45;250
+16;Maisonette, Apartment;Sale;Thessalloniki;65;140000
+17;Maisonette;Sale;Patra;210;340000
+18;Maisonette;Rent;Thessalloniki;120;700
+19;Maisonette;Rent;Patra;100;160
+20;Maisonette;Rent;Patra;100;160
